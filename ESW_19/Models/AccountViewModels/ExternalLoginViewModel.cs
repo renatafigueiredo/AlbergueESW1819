@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ESW_19.Models.AccountViewModels
 {
+   //Esta acção e executada quando o utilizador deseja efectuar login
     public class ExternalLoginViewModel
     {
         [Required]

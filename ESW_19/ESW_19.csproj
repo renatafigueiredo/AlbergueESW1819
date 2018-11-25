@@ -5,6 +5,10 @@
     <UserSecretsId>aspnet-ESW_19-F5772F53-0B5F-464C-9303-148BEDF43C78</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\joao.quissenguele\Source\Repos\AlbergueTurmaESW3G52\ESW_19\ESW_19.xml</DocumentationFile>
+  </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />

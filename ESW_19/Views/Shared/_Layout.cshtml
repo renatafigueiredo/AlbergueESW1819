@@ -17,7 +17,10 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--Menu da aplicação -->
+    <!-- <div class="logo-container"><img src="images/log4.png" alt="Abercool" /></div>-->
+    
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,19 +29,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">ESW_19</a>
+                <div class="logo-container"><img src="images/log4.png" alt="Abercool" /></div>
             </div>
+
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                @await Html.PartialAsync("_LoginPartial")
-            </div>
-        </div>
+
+            <ul class="nav navbar-nav">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">COMO AJUDAR</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="UploadImage">ADOÇÃO</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">ALBERGUE</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">CONTACTOS</a></li>
+        </ul>
+
+                  
+
+                
+               
+    </div>
+    </div>
     </nav>
-    <div class="container body-content">
+  
+
+
+    <div class="logo-container">
         @RenderBody()
-        <hr />
+        <hr/>
         <footer>
             <p>&copy; 2018 - ESW_19</p>
         </footer>
