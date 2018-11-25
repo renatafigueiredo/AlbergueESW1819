@@ -8,6 +8,7 @@ namespace ESW_19.Models.AccountViewModels
 {
     public class LoginWith2faViewModel
     {
+        //Metódo que informa ao utilizador as normas da password a ser inserida 
         [Required]
         [StringLength(7, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         [DataType(DataType.Text)]

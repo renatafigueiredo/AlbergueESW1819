@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ESW_19.Models.AccountViewModels
 {
+    //Esta acção é executada quando o utilizador clica na opção recuperar password
     public class ForgotPasswordViewModel
     {
         [Required]
