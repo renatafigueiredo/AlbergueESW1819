@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ESW_19.Models;
+using System.IO;
+using System.Net;
+using System.Text;
 
 namespace ESW_19.Controllers
 {
@@ -19,6 +22,10 @@ namespace ESW_19.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
+            return View();
+        }
+        public IActionResult UploadImage()
+        {
             return View();
         }
 
